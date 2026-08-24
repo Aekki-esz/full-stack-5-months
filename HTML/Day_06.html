@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 06 - Practice HTML links and relative paths</title>
+  </head>
+
+  <body>
+    <h1>Links Workshop</h1>
+
+    <!-- 1. ไป life.html -->
+    <a href="life.html"> Life Insurance </a>
+
+    <br /><br />
+
+    <!-- 2. ไป contact.html -->
+    <a href="../contact.html"> Contact </a>
+
+    <br /><br />
+
+    <!-- 3. กลับหน้าแรก index.html -->
+    <a href="../../index.html"> Homepage </a>
+
+    <br /><br />
+
+    <!-- 4. แสดง logo.png -->
+    <img src="../../images/logo.png" alt="Logo" />
+
+    <br /><br />
+
+    <!-- 5. External link + เปิด Tab ใหม่ -->
+    <a href="https://developer.mozilla.org" target="_blank"> MDN Web Docs </a>
+
+    <br /><br />
+
+    <!-- 6. ส่ง Email -->
+    <a href="mailto:agent@example.com"> Email our insurance advisor </a>
+
+    <br /><br />
+
+    <!-- 7. ส่ง Email พร้อม Subject -->
+    <a href="mailto:agent@example.com?subject=Insurance%20Question">
+      Ask about insurance
+    </a>
+
+    <br /><br />
+
+    <!-- 8. ไปยังตำแหน่ง FAQ ในหน้าเดียวกัน -->
+    <a href="#faq"> Go to FAQ </a>
+
+    <br /><br />
+
+    <!-- 9. ลิงก์ไปยังไฟล์ PDF -->
+    <a href="../../documents/insurance-guide.pdf">
+      Download our insurance guide (PDF)
+    </a>
+
+    <br /><br />
+
+    <!-- 10. ตัวอย่าง Link Text ที่ดี -->
+    <p>
+      <a href="../../documents/insurance-guide.pdf">
+        Download our insurance guide
+      </a>
+      (PDF, 3MB)
+    </p>
+
+    <!-- เนื้อหาจำลอง เพื่อให้เห็นการกระโดดไป #faq -->
+    <div style="height: 800px"></div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <p>This is the FAQ section.</p>
+  </body>
+</html>
