@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 07 - HTML Images, Video and Audio</title>
+  </head>
+  <body>
+    <!-- 1 -->
+    <h1>Basic image embed</h1>
+
+    <img
+      src="https://github.com/mdn/learning-area/blob/main/html/multimedia-and-embedding/tasks/images/blueberries.jpg?raw=true"
+      alt="blueberries"
+      width="400"
+      height="273"
+    />
+
+    <p>You should see a picture of some blueberries above.</p>
+
+    <!-- 2 -->
+    <h1>Basic image title</h1>
+
+    <img
+      src="https://github.com/mdn/learning-area/blob/main/html/multimedia-and-embedding/tasks/images/larch.jpg?raw=true"
+      alt="Several tall evergreen trees called larches"
+      title="And now, Number 1, The Larch"
+    />
+
+    <!-- 3 -->
+    <h1>Image and caption</h1>
+
+    <figure>
+      <img
+        src="https://github.com/mdn/learning-area/blob/main/html/multimedia-and-embedding/tasks/images/firefox.png?raw=true"
+        alt="An abstract flaming fox wrapping around a blue sphere"
+        width="446"
+        height="460"
+      />
+      <figcaption>The 2019 Firefox logo</figcaption>
+    </figure>
+
+    <!-- video -->
+    <video
+      controls
+      width="400"
+      height="400"
+      autoplay
+      loop
+      muted
+      preload="auto"
+      poster="poster.png"
+    >
+      <source src="rabbit320.mp4" type="video/mp4" />
+      <source src="rabbit320.webm" type="video/webm" />
+      <p>
+        Your browser doesn't support this video. Here is a
+        <a href="rabbit320.mp4">link to the video</a> instead.
+      </p>
+    </video>
+    <!-- 
+widthและheight
+คุณสามารถควบคุมขนาดวิดีโอได้โดยใช้แอตทริบิวต์เหล่านี้หรือโดยใช้CSSในทั้งสองกรณี วิดีโอจะรักษาสัดส่วนความกว้างและความสูงดั้งเดิมไว้ ซึ่งเรียกว่าอัตราส่วนภาพหากขนาดที่คุณตั้งไว้ไม่รักษาสัดส่วนภาพไว้ วิดีโอจะขยายเพื่อเติมเต็มพื้นที่ในแนวนอน และพื้นที่ว่างที่เหลือจะถูกกำหนดสีพื้นหลังเป็นสีทึบโดยค่าเริ่มต้น
+
+autoplay
+ฟังก์ชันนี้จะทำให้เสียงหรือวิดีโอเริ่มเล่นทันที ในขณะที่ส่วนอื่นๆ ของหน้าเว็บกำลังโหลดอยู่ ขอแนะนำว่าอย่าใช้ฟังก์ชันเล่นวิดีโอ (หรือเสียง) อัตโนมัติในเว็บไซต์ของคุณ เพราะผู้ใช้อาจรู้สึกรำคาญได้
+
+loop
+ฟังก์ชันนี้จะทำให้วิดีโอ (หรือเสียง) เริ่มเล่นใหม่ทุกครั้งที่เล่นจบ ซึ่งอาจสร้างความรำคาญได้ ดังนั้นควรใช้เฉพาะเมื่อจำเป็นจริงๆ เท่านั้น
+
+muted
+ทำให้สื่อเล่นโดยปิดเสียงไว้เป็นค่าเริ่มต้น
+
+poster
+URL ของภาพที่จะแสดงก่อนเริ่มเล่นวิดีโอ โดยมีจุดประสงค์เพื่อใช้เป็นภาพเปิดหน้าจอหรือหน้าจอโฆษณา
+
+preload
+ใช้สำหรับบัฟเฟอร์ไฟล์ขนาดใหญ่ โดยสามารถรับค่าได้สามค่า:
+
+"none"ไม่ทำการบัฟเฟอร์ไฟล์
+"auto"บัฟเฟอร์ไฟล์มีเดีย
+"metadata"บัฟเฟอร์จะจัดเก็บเฉพาะข้อมูลเมตาของไฟล์เท่านั้น -->
+
+    <!--  
+<track>      = เพิ่ม subtitle/caption
+kind         = ประเภท
+src          = ไฟล์อยู่ไหน
+srclang      = ภาษาอะไร
+label        = ชื่อที่ผู้ใช้เห็น -->
+
+    <video controls>
+      <source src="movie.mp4" type="video/mp4" />
+
+      <track
+        kind="subtitles"
+        src="subtitles_en.vtt"
+        srclang="en"
+        label="English"
+      />
+
+      <track
+        kind="subtitles"
+        src="subtitles_th.vtt"
+        srclang="th"
+        label="Thai"
+      />
+    </video>
+    <!-- audio -->
+    <audio controls>
+      <source src="viper.mp3" type="audio/mp3" />
+      <source src="viper.ogg" type="audio/ogg" />
+      <p>
+        Your browser doesn't support this audio file. Here is a
+        <a href="viper.mp3">link to the audio</a> instead.
+      </p>
+    </audio>
+  </body>
+</html>
