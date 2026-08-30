@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h2>Register for Tech Meetup 2026</h2>
+      <fieldset>
+        <legend>Personal information</legend>
+        <ul>
+          <li>
+            <label for="name">Full name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              minlength="3"
+              maxlength="30"
+            />
+          </li>
+
+          <li>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </li>
+          <li>
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone" required maxlength="15" />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Ticket & Workshops</legend>
+        <p>Choose ticket type</p>
+        <input type="radio" name="ticket" id="free" value="free" />
+        <label for="free">Free</label>
+        <input
+          type="radio"
+          name="ticket"
+          id="standard"
+          checked
+          value="standard"
+        />
+        <label for="standard">Standard</label>
+        <input type="radio" name="ticket" id="vip" value="vip" />
+        <label for="vip">VIP</label>
+        <br />
+
+        <p><p>Choose workshops</p></p>
+
+        <label for="html">HTML</label>
+        <input type="checkbox" name="workshops" id="html" value="html" />
+
+        <label for="css">CSS</label>
+        <input type="checkbox" name="workshops" id="css" value="css" />
+
+        <label for="javascript">JavaScript</label>
+        <input
+          type="checkbox"
+          name="workshops"
+          id="javascript"
+          value="javascript"
+        />
+
+        <label for="git">Git & GitHub</label>
+        <input type="checkbox" name="workshops" id="git" value="git" />
+      </fieldset>
+      <fieldset>
+        <legend>Other information</legend>
+        <label for="trans">Transportation</label>
+        <select name="trans" id="trans">
+          <option value="">Please choose</option>
+          <option value="Car">Car</option>
+          <option value="Bus">Bus</option>
+          <option value="Train">Train</option>
+          <option value="Walk">Walk</option>
+        </select>
+        <br />
+        <label for="color">Favorite color</label>
+        <input type="color" name="fav-color" id="color" />
+        <br />
+        <label for="comments">Additional comments</label>
+        <br />
+        <textarea
+          name="comments"
+          id="comments"
+          required
+          maxlength="200"
+          cols="50"
+          rows="10"
+        ></textarea>
+        <br />
+        <button type="submit">Register</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
