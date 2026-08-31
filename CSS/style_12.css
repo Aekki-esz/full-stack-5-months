@@ -1,0 +1,25 @@
+input[type] {
+  padding: 10px;
+}
+input[type="email"] {
+  background-color: lightyellow;
+}
+a[title] {
+  font-weight: bold;
+}
+a[href$=".pdf"] {
+  color: red;
+}
+a[href*="youtube"] {
+  color: purple;
+}
+p[class~="warning"] {
+  background-color: lightyellow;
+}
+p[class~="danger"] {
+  background-color: pink;
+}
+div[class^="box-"] {
+  border: 2px solid gray;
+  padding: 10px;
+}
