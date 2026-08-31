@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 11 - CSS Basic Selectors</title>
+
+    <link rel="stylesheet" href="style_11.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="main-title">Day 11 - CSS Basic Selectors</h1>
+
+      <p>
+        Practice Type, Class, ID, Selector List, Multiple Classes and Universal
+        Selectors.
+      </p>
+    </header>
+
+    <main>
+      <!-- Type Selector -->
+      <section>
+        <h2>1. Type Selector</h2>
+
+        <p>This paragraph is selected using the p selector.</p>
+
+        <p>All paragraph elements receive the same basic style.</p>
+      </section>
+
+      <!-- Class Selector -->
+      <section>
+        <h2>2. Class Selector</h2>
+
+        <p class="highlight">This paragraph has the highlight class.</p>
+
+        <p>
+          This text contains a
+          <span class="highlight">highlighted word</span>.
+        </p>
+      </section>
+
+      <!-- Element + Class -->
+      <section>
+        <h2 class="highlight">3. Element + Class Selector</h2>
+
+        <p>
+          Both the heading and the span use the same class, but CSS can target
+          them separately.
+        </p>
+
+        <span class="highlight"> I am a span with the highlight class. </span>
+      </section>
+
+      <!-- Multiple Classes -->
+      <section>
+        <h2>4. Multiple Classes</h2>
+
+        <div class="notebox">This is a normal information box.</div>
+
+        <div class="notebox warning">
+          Warning: This element has two classes.
+        </div>
+
+        <div class="notebox danger">
+          Danger: This element also has two classes.
+        </div>
+
+        <div class="danger">This only has the danger class.</div>
+      </section>
+
+      <!-- ID Selector -->
+      <section>
+        <h2>5. ID Selector</h2>
+
+        <p id="important-message">An ID should be unique on this page.</p>
+      </section>
+
+      <!-- Selector List -->
+      <section>
+        <h2>6. Selector List</h2>
+
+        <h3>HTML</h3>
+        <h4>CSS</h4>
+
+        <p>The h3 and h4 elements share the same CSS rule.</p>
+      </section>
+
+      <!-- Universal Selector -->
+      <section class="universal-demo">
+        <h2>7. Universal Selector</h2>
+
+        <p>
+          The universal selector uses
+          <strong>*</strong>
+          to select elements.
+        </p>
+
+        <p>
+          This paragraph contains
+          <em>emphasized text</em>
+          and
+          <span>span text</span>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>CSS Practice - Day 11</p>
+    </footer>
+  </body>
+</html>
