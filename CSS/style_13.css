@@ -1,0 +1,162 @@
+/* =========================
+   Day 13
+   Pseudo Classes & Elements
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: darkslategray;
+}
+
+/* =========================
+   1. :hover
+   ========================= */
+
+/* When mouse is over the link */
+a:hover {
+  color: red;
+}
+
+/* When mouse is over the button */
+button:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+/* =========================
+   2. :focus
+   ========================= */
+
+/* When input receives focus */
+input:focus {
+  border: 3px solid blue;
+  background-color: lightyellow;
+  outline: none;
+}
+
+/* =========================
+   3. :first-child
+   ========================= */
+
+/* Select the first p
+   inside .articles */
+.articles p:first-child {
+  color: darkred;
+  font-weight: bold;
+}
+
+/* =========================
+   4. ::first-line
+   ========================= */
+
+/* Select only first line */
+.first-line::first-line {
+  color: purple;
+  font-weight: bold;
+}
+
+/* =========================
+   5. ::first-letter
+   ========================= */
+
+/* Select first character */
+.first-letter::first-letter {
+  font-size: 3rem;
+  color: darkred;
+  font-weight: bold;
+}
+
+/* =========================
+   6. ::selection
+   ========================= */
+
+/* Style text while
+   user selects/highlights it */
+.selection-demo::selection {
+  background-color: purple;
+  color: white;
+}
+
+/* =========================
+   7. ::before
+   ========================= */
+
+.before-demo::before {
+  content: "⚠ ";
+  color: orange;
+  font-weight: bold;
+}
+
+/* =========================
+   8. ::after
+   ========================= */
+
+.after-demo::after {
+  content: " ✓";
+  color: green;
+  font-weight: bold;
+}
+
+/* =========================
+   9. ::before + ::after
+   ========================= */
+
+.quote::before {
+  content: "“";
+  font-size: 2rem;
+  color: gray;
+}
+
+.quote::after {
+  content: "”";
+  font-size: 2rem;
+  color: gray;
+}
+
+/* =========================
+   10. Pseudo-class
+       + Pseudo-element
+   ========================= */
+
+/*
+  :first-child
+  selects the first paragraph
+
+  ::first-line
+  selects its first line
+*/
+
+article p:first-child::first-line {
+  color: darkblue;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+}

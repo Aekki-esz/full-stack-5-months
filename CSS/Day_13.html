@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 12 - Pseudo Classes and Elements</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Day 13 - Pseudo Classes & Pseudo Elements</h1>
+      <p>
+        Practice :hover, :focus, :first-child, ::first-line, ::first-letter,
+        ::selection, ::before and ::after
+      </p>
+    </header>
+
+    <main>
+      <!-- 1. :hover -->
+      <section>
+        <h2>1. :hover</h2>
+
+        <a href="#">Hover over this link</a>
+
+        <button type="button">Hover over me</button>
+      </section>
+
+      <!-- 2. :focus -->
+      <section>
+        <h2>2. :focus</h2>
+
+        <label for="name">Your name:</label>
+
+        <input type="text" id="name" placeholder="Click here or press Tab" />
+      </section>
+
+      <!-- 3. :first-child -->
+      <section>
+        <h2>3. :first-child</h2>
+
+        <div class="articles">
+          <p>First paragraph</p>
+          <p>Second paragraph</p>
+          <p>Third paragraph</p>
+        </div>
+      </section>
+
+      <!-- 4. ::first-line -->
+      <section>
+        <h2>4. ::first-line</h2>
+
+        <p class="first-line">
+          CSS pseudo-elements can select a specific part of an element. This
+          paragraph is long enough to create more than one line, so you can see
+          how the first line receives different styling.
+        </p>
+      </section>
+
+      <!-- 5. ::first-letter -->
+      <section>
+        <h2>5. ::first-letter</h2>
+
+        <p class="first-letter">
+          Learning CSS becomes easier when you practice every day.
+        </p>
+      </section>
+
+      <!-- 6. ::selection -->
+      <section>
+        <h2>6. ::selection</h2>
+
+        <p class="selection-demo">
+          Drag your mouse over this text to select it. The selected text will
+          change its background and text color.
+        </p>
+      </section>
+
+      <!-- 7. ::before -->
+      <section>
+        <h2>7. ::before</h2>
+
+        <p class="before-demo">Important information</p>
+      </section>
+
+      <!-- 8. ::after -->
+      <section>
+        <h2>8. ::after</h2>
+
+        <p class="after-demo">Task completed</p>
+      </section>
+
+      <!-- 9. before + after -->
+      <section>
+        <h2>9. ::before + ::after</h2>
+
+        <p class="quote">Practice makes progress.</p>
+      </section>
+
+      <!-- 10. Pseudo-class + Pseudo-element -->
+      <section>
+        <h2>10. Combine Selectors</h2>
+
+        <article>
+          <p>
+            This is the first paragraph inside the article. The first line will
+            receive special styling.
+          </p>
+
+          <p>This is the second paragraph.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>CSS Practice - Day 13</p>
+    </footer>
+  </body>
+</html>
